@@ -1,0 +1,1 @@
+This is a HTML/CSS clone of the Google homepage to practice using HTML/CSS. 
