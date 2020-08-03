@@ -8,24 +8,43 @@
 
 <body>
 
-<header>
-    <a href="">About</a> 
-    <a href="">Store</a>
-    <a href="">Gmail</a>
-    <a href="">Images</a>
-    <button type="button">Sign In</button>
+<header class="nav-bar">
+    <ul>
+        <li><a href="" class="nav-link">About</a> </li>
+        <li><a href="" class="nav-link">Store</a></li>
+        <div style="float:right">
+            <li><a href="" class="nav-link">Gmail</a></li>
+            <li><a href="" class="nav-link">Images</a></li>
+            <li><button type="button" id="signin-button"><strong>Sign in</strong></button></li>
+        </div>
+    </ul>
 </header>
 
 <main>
     <img src="google-logo.png" alt="Google Logo" id="google-logo">
     <form>
-        <input type="text" id="search-bar"><br><br>
-        
-        <input type="submit" value="Google Search" class="search-button">
-        <input type="submit" value="I'm Feeling Lucky" class="search-button">
- 
+        <div id="search-bar">
+            <img src="img/search-icon.png" alt="Search Icon" id="search-icon" width="20" height="20">
+            <input type="text" id="search-input"><br><br>
+        </div>
+        <div class="search-buttons">
+            <input type="submit" value="Google Search" class="search-button">
+            <input type="submit" value="I'm Feeling Lucky" class="search-button">
+        </div>
     </form>
 </main>
 
+<footer class="footer">
+    <ul>
+        <li><a href="">Advertising</a></li>
+        <li><a href="">Business</a></li>
+        <li><a href="">How Search works</a></li>
+        <div style="float: right">
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Settings</a></li>
+        </div>
+    </ul>
+</footer>
 </body>
 </html>
